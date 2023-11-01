@@ -24,12 +24,13 @@ conda env create --file=/path/to/environment.yml
 conda activate hic_analysis
 ```
 To run the `simulation.r` script:
+
 -> Open `R-console` on the terminal
 -> Run the script by using the `source` function 
 ```bash
 source("/path/to/simulation.r")
 ```
-The script then prompts the user to enter the `number of rows` and `column` for the `mother matrix`:
+The script then prompts the user to enter the `number of rows` and `columns` for the `mother matrix`:
 ```bash
 Enter number of rows in matrix: # user-defined
 20 # use even number of rows to equally divide the mother-matrix between active and repressed chromatin regions 
