@@ -26,6 +26,7 @@ conda activate hic_analysis
 To run the `simulation.r` script:
 
 -> Open `R-console` on the terminal
+
 -> Run the script by using the `source` function 
 ```bash
 source("/path/to/simulation.r")
