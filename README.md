@@ -8,7 +8,7 @@ See this on how to install Conda -> `https://conda.io/projects/conda/en/latest/u
 
 To create an environment using the .yml file in this repository:
 ```bash
-conda env create --file=environment.yml
+conda env create --file=/path/to/environment.yml
 ```
 
 ## Usage
@@ -24,6 +24,16 @@ conda env create --file=/path/to/environment.yml
 conda activate hic_analysis
 ```
 To run the `simulation.r` script:
+-> Open `R-console` on the terminal
+-> Run the script by using the `source` function 
 ```bash
-source("simulation.r")
+source("/path/to/simulation.r")
 ```
+The script then prompts the user to enter the `number of rows` and `column` for the `mother matrix`:
+```bash
+Enter number of rows in matrix: # user-defined
+20 # use even number of rows to equally divide the mother-matrix between active and repressed chromatin regions 
+Enter number of columns in matrix: # user-defined
+200 
+```
+The output of the script are multiple plots which replicate the results from figure 3 of our manuscript.
